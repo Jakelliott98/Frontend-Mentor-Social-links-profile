@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+:root {
+    --green-color: hsl(75,94%, 57%);
+    --white-colour: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+    --fs-small: 0.875rem;
+    --fs-medium: 0.9rem;
+    --fs-large: 1.6rem;
+
+    --fw-light: 400;
+    --fw-medium: 600;
+    --fw-bold: 700;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-900);
+    font-family: inter;
+
+}
+
+h1, p, button {
+    color: var(--white-colour);
+}
+
+.socialLinkCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--grey-800);
+}
+
+img {
+    border-radius: 50%;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.locationText {
+    color: var(--green-color);
+    font-weight: var(--fw-medium);
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+button {
+    padding: 15px 10px;
+    background-color: var(--grey-700);
+    border: none;
+    border-radius: 10px;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-small);
+}
+
+h1 {
+    font-size: var(--fs-large);
+    font-weight: var(--fw-medium);
+}
+
+p {
+    font-size: var(--fs-small);
+}
